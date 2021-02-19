@@ -1,0 +1,120 @@
+body {
+  background: #FFAD38;
+  text-align: center;
+
+}
+
+#mensaje {
+	border-radius: 16px;
+}
+
+.caja {
+	border-radius: 16px;
+	text-align: left;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: 30px;
+	background: #FF9600;
+	display: inline-block;
+	width: 90%;
+	position: relative;
+}	
+
+pictograma {
+    color: black;
+    width: 90%;
+    height: 40%;
+    padding-left: 20px;
+    font-size:24px
+    }
+
+textocaja {
+    color: black;
+    width: 90%;
+    height: 40%;
+    padding-left: 20px;
+    font-size:17px
+    }
+
+texto2 {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 900;
+    font-size: 90%;
+    color: white;
+    bottom: 1%;
+    }
+    
+table, th, td {
+  border: 20px solid #FF9600;
+  border-collapse: collapse;
+}
+
+#mensaje {
+	padding: 2% 4%;
+}
+
+.button {
+    border-radius: 10%;
+    color: white;
+    padding: 3% 5%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.rojo {
+  background-color: #FF2A00; 
+  color: white; 
+  border: 2px solid black;
+}
+
+.rojo:hover {
+  background-color: white;
+  color: black;
+}
+
+.naranja {
+  background-color: #FF9300; 
+  color: white; 
+  border: 2px solid black;
+}
+
+.naranja:hover {
+  background-color: white;
+  color: black;
+}
+
+texto {
+    font-family: "Times New Roman", Times, serif;
+    text-align:center;
+    font-size: 160%;
+    }
+
+#info {
+    text-align: right;
+    z-index:9999999;
+    bottom: 0;
+    right: 1%;
+    }
+
+    p {
+      font-family: "Times New Roman", Times, serif;
+      margin-left: 5%
+    }
+
+    .titulo {
+      font-family: sans-serif;
+      text-align: center;
+      font-size: x-large;
+      font-weight: bolder;
+      margin-top: 1em;
+    }
+
+    .texto {
+      font-family: "Times New Roman", Times, serif;
+    }

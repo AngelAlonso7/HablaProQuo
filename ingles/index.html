@@ -1,0 +1,105 @@
+<html><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Ángel Alonso">
+	<meta property="og:image" content="Img/logo.png">
+	<meta property="og:description" content="Program for people with speech difficulties.">
+	<meta name="description" content="Program for people with speech difficulties.">
+	<meta name="rights" content="Program for people with speech difficulties."/>
+	<meta name="keywords" content="Program for people with speech difficulties."/>
+	<meta property="og:title" content="Habla Pro Quo">
+    <link href='Img/logo.png' rel='shortcut icon' type='image/png'>
+
+	<title>Habla Pro Quo Web</title>
+  <script src='texto.js'></script>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<script>
+var idioma = "en_GB"
+
+    function hablar() {
+        var mensaje = document.getElementById('mensaje').value;
+        let utterance = new SpeechSynthesisUtterance(mensaje)
+        utterance.lang = idioma
+        speechSynthesis.speak(utterance)
+    }
+    
+
+    function borrar() {
+        document.getElementById("mensaje").value = "";
+        }
+        
+    function info() {location.href = "Informacion"};
+    function prediseño() {};
+
+</script>
+<body>
+<div class="caja">
+
+<table style="width:100%; text-align:center;">
+
+
+  <tr>
+    <td><textarea placeholder="Write the message here..." id="mensaje" rows="7" cols="25"></textarea></td>
+  </tr>
+  <tr>
+<td><button class="button naranja" onclick="hablar()">TALK</button>
+<button class="button rojo" onclick="borrar()">DELETE</button>
+</td>
+  </tr> 
+  <tr>
+<td>
+<!--<button class="button naranja" onclick="prediseño()">SAVED</button>-->
+</td>
+  </tr>
+</table>
+<br><br>
+
+<texto><i><center>Pictograms</center></i></texto><br>
+  <pictograma><img src="Img/img1.png" onclick="imagen1()" border="0" width="50" height="50"/><textocaja>Yes</pictograma><br><br>
+  <pictograma><img src="Img/img2.png" onclick="imagen2()" border="0" width="50" height="50"/><textocaja>No</pictograma><br><br>
+  <pictograma><img src="Img/img3.png" onclick="imagen3()" border="0" width="50" height="50"/><textocaja>Good Morning</pictograma><br><br>
+  <pictograma><img src="Img/img4.png" onclick="imagen4()" border="0" width="50" height="50"/><textocaja>Good afternoon</pictograma><br><br>
+  <pictograma><img src="Img/img6.png" onclick="imagen5()" border="0" width="50" height="50"/><textocaja>Help</pictograma><br><br>
+  <pictograma><img src="Img/img7.png" onclick="imagen6()" border="0" width="50" height="50"/><textocaja>I'm going to have a bath</pictograma><br><br>
+  <pictograma><img src="Img/img8.png" onclick="imagen7()" border="0" width="50" height="50"/><textocaja>Do you have a charger?</pictograma><br><br>
+  <pictograma><img src="Img/img9.png" onclick="imagen8()" border="0" width="50" height="50"/><textocaja>What is your name?</pictograma><br><br>
+  <pictograma><img src="Img/img11.png" onclick="imagen9()" border="0" width="50" height="50"/><textocaja>How much is it?</pictograma><br><br>
+  <pictograma><img src="Img/img12.png" onclick="imagen10()" border="0" width="50" height="50"/><textocaja>Where?</pictograma><br><br>
+  <pictograma><img src="Img/img13.png" onclick="imagen11()" border="0" width="50" height="50"/><textocaja>Where is the bathroom?</pictograma><br><br>
+  <pictograma><img src="Img/img14.png" onclick="imagen12()" border="0" width="50" height="50"/><textocaja>I'm going to sleep</pictograma><br><br>
+  <pictograma><img src="Img/img16.png" onclick="imagen13()" border="0" width="50" height="50"/><textocaja>I am very hungry</pictograma><br><br>
+  <pictograma><img src="Img/img17.png" onclick="imagen14()" border="0" width="50" height="50"/><textocaja>Please</pictograma><br><br>
+  <pictograma><img src="Img/img18.png" onclick="imagen15()" border="0" width="50" height="50"/><textocaja>¿What?</pictograma><br><br>
+  <pictograma><img src="Img/img19.png" onclick="imagen16()" border="0" width="50" height="50"/><textocaja>You</pictograma><br><br>
+  <pictograma><img src="Img/img21.png" onclick="imagen17()" border="0" width="50" height="50"/><textocaja>I am happy</pictograma><br><br>
+  <pictograma><img src="Img/img22.png" onclick="imagen18()" border="0" width="50" height="50"/><textocaja>I'm hot</pictograma><br><br>
+  <pictograma><img src="Img/img23.png" onclick="imagen19()" border="0" width="50" height="50"/><textocaja>I am angry</pictograma><br><br>
+  <pictograma><img src="Img/img24.png" onclick="imagen20()" border="0" width="50" height="50"/><textocaja>It's raining</pictograma><br><br>
+  <pictograma><img src="Img/img26.png" onclick="imagen21()" border="0" width="50" height="50"/><textocaja>Is cloudy</pictograma><br><br>
+  <pictograma><img src="Img/img27.png" onclick="imagen22()" border="0" width="50" height="50"/><textocaja>Windy</pictograma><br><br>
+  <pictograma><img src="Img/img28.png" onclick="imagen23()" border="0" width="50" height="50"/><textocaja>It's sunny</pictograma><br><br>
+  <pictograma><img src="Img/img29.png" onclick="imagen24()" border="0" width="50" height="50"/><textocaja>What time is it?</pictograma><br><br>
+  <pictograma><img src="Img/img5.png" onclick="imagen25()" border="0" width="50" height="50"/><textocaja>Goodnight</pictograma><br><br>
+  <pictograma><img src="Img/img10.png" onclick="imagen26()" border="0" width="50" height="50"/><textocaja>Can you cut me a little?</pictograma><br><br>
+  <pictograma><img src="Img/img15.png" onclick="imagen27()" border="0" width="50" height="50"/><textocaja>I feel bad</pictograma><br><br>
+  <pictograma><img src="Img/img20.png" onclick="imagen28()" border="0" width="50" height="50"/><textocaja>I'm cold</pictograma><br><br>
+  <pictograma><img src="Img/img25.png" onclick="imagen29()" border="0" width="50" height="50"/><textocaja>It's snowing</pictograma><br><br>
+  <pictograma><img src="Img/img30.png" onclick="imagen30()" border="0" width="50" height="50"/><textocaja>I can play?</pictograma><br><br>
+  <pictograma><img src="Img/img31.png" onclick="imagen31()" border="0" width="50" height="50"/><textocaja>Hello</pictograma><br><br>
+  <pictograma><img src="Img/img32.png" onclick="imagen32()" border="0" width="50" height="50"/><textocaja>My stomach hurts</pictograma><br><br>
+  <pictograma><img src="Img/img33.png" onclick="imagen33()" border="0" width="50" height="50"/><textocaja>I have a headache</pictograma><br><br>
+  <pictograma><img src="Img/img34.png" onclick="imagen34()" border="0" width="50" height="50"/><textocaja>My back hurts</pictograma><br><br>
+  <pictograma><img src="Img/img35.png" onclick="imagen35()" border="0" width="50" height="50"/><textocaja>My throat hurts</pictograma><br><br>
+  <pictograma><img src="Img/img36.png" onclick="imagen36()" border="0" width="50" height="50"/><textocaja>My chest hurts</pictograma><br><br>
+  <pictograma><img src="Img/img37.png" onclick="imagen37()" border="0" width="50" height="50"/><textocaja>My knee hurts</pictograma><br><br>
+  <br>
+
+
+<div id="info">
+<input type="image" src="Img/info.png" OnClick="info()" border="0" name="submit" title="Info" alt="Info button" width="70" height="70"/>
+</div>
+
+</div>
+
+</body></html>

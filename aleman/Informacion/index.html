@@ -1,0 +1,74 @@
+<html><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Ángel Alonso">
+	<meta property="og:image" content="Img/logo.png">
+	<meta property="og:description" content="Programm für Menschen mit Sprachschwierigkeiten.">
+	<meta name="description" content="Programm für Menschen mit Sprachschwierigkeiten.">
+	<meta name="rights" content="Programm für Menschen mit Sprachschwierigkeiten."/>
+	<meta name="keywords" content="Programm für Menschen mit Sprachschwierigkeiten."/>
+	<meta property="og:title" content="Habla Pro Quo">
+    <link href='Img/logo.png' rel='shortcut icon' type='image/png'>
+
+	<title>Habla Pro Quo Web</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+
+<script>
+    var mensaje="Sie können die kostenlose App Habla Pro Quo jetzt unter folgendem Link herunterladen: https://play.google.com/store/apps/details?id=com.hablaproquo\n\Woraus besteht es?\nGeben Sie Menschen mit Kommunikationsschwierigkeiten wenig Unterstützung."
+    function whatsapp() {
+        location.href = "https://api.whatsapp.com/send?text=" + mensaje
+        }
+    
+    function facebook() {
+        location.href = "http://www.facebook.com/sharer.php?u=https://play.google.com/store/apps/details?id=com.hablaproquo"
+        }
+    
+    function twitter() {
+        location.href = "http://twitter.com/home?status=" + mensaje
+        }
+</script>
+
+<body>
+<div class="caja">
+  <div class="titulo">
+    <p>Nutzungsrichtlinien</p>
+  </div>
+  <div class="texto">
+    <p>Diese Anwendung überträgt keine persönlichen Informationen ohne die Zustimmung der Benutzer. Die Dienste, mit denen diese Anwendung arbeitet, verwenden oder offenbaren keine persönlichen Informationen.</p>
+  </div><hr>
+
+  <div class="titulo">
+    <p>Zusätzliche Informationen</p>
+  </div>
+  <div class="texto">
+      <p>Diese App wurde von Ángel Alonso Ramírez, Student des IES Lomo de la Herradura, entwickelt.</p>
+    <p>Die App ist so konzipiert, dass Menschen mit Sprachschwierigkeiten kommunizieren können.</p>
+    </div><hr>
+
+  <div class="titulo">
+    <p>Kundenspezifische Piktogramme</p>
+  </div>
+  <div class="texto">
+      <p>Im Titel kann es nur ein Wort geben.</p>
+    <p>Wenn Sie ein neues Piktogramm mit demselben Namen wie ein anderes Piktogramm erstellen, wird es ausgeblendet.</p>
+    </div><hr>
+
+
+  <div class="titulo">
+    <p>Fragen oder Anregungen?</p>
+  </div>
+  <div class="texto">
+<p>Sie können mich über diese E-Mail kontaktieren <font color="blue" OnClick="app.SendMail( 'angel.731998@gmail.com');"><i><u>angel.731998@gmail.com</u></i></font></p>
+  </div>
+<br>
+
+<table id="info">
+    <td><texto2>Teilen</texto2><br></td>
+    <td><img src="Img/whatsapp.png" onclick="whatsapp()" style="margin: 5% 0%; width: 30px; height: 30px;"><br></td>
+    <td><img src="Img/facebook.png" onclick="facebook()" style="margin: 5% 0%; width:30px; height 30px;"><br></td>
+    <td><img src="Img/twitter.png" onclick="twitter()" style="margin: 5% 0%; width: 30px; height: 30px;"><br></td>
+</table>
+
+</div>
+</body></html>

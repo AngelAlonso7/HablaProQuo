@@ -12,54 +12,74 @@
 
 	<title>Habla Pro Quo Web</title>
     <link rel="stylesheet" type="text/css" href="estilo.css">
+
 </head>
+
+
 <script>
-function espanol() {location.href = "espanol"}
-function ingles() {location.href = "ingles"}
-function aleman() {location.href = "aleman"}
-function japones() {location.href = "japones"}
-function chino() {location.href = "chino"}
+function espanol() {location.href = "espanol.html"}
+function ingles() {location.href = "ingles.html"}
+function aleman() {location.href = "aleman.html"}
+function japones() {location.href = "japones.html"}
+function chino() {location.href = "chino.html"}
+function portugues() {location.href = "portugues.html"}
+function frances() {location.href = "francais.html"}
+function multi() {location.href = "multi.html"}
+
 </script>
-<body>
-<div class="caja">
 
-<br>
-<center>
-<table>
+	<center>
+	<div class="cajon">
+<table onclick="espanol()">
 		<tr>
-		<th colspan="2"><texto2><i>¿Que idioma desea?</i></texto2></th>
-		</tr>
-
-		<tr>
-		<th colspan="2"><texto2><i>What language do you want?</i></texto2></th>
-		</tr>
-
-		<tr>
-		<th><fondo><dia><dato1><img src="Img/ban1.png" onclick="espanol()" border="2" alt="Español" width="75" height="50"></dato1></dia></th>
-		<th><dato2>Español</dato2></fondo></th>
-		</tr>
-
-		<tr>
-		<th><fondo><dia><dato1><img src="Img/ban2.png" onclick="ingles()" border="2" alt="Ingles" width="75" height="50"></dato1><dia></th>
-		<th><dato2>English</dato2></fondo></th>
-		</tr>
-
-		<tr>
-		<th><fondo><dia><dato1><img src="Img/ban3.png" onclick="aleman()" border="2" alt="Aleman" width="75" height="50"></dato1></dia></th>
-		<th><dato2>Deutsch</dato2></fondo></th>
-		</tr>
-
-		<tr>
-		<th><fondo><dia><dato1><img src="Img/ban4.png" onclick="japones()" border="2" alt="Japones" width="75" height="50"></dato1></dia></th>
-		<th><dato2>日本</dato2></fondo></th>
-		</tr>
-
-		<tr>
-		<th><fondo><dia><dato1><img src="Img/ban5.png" onclick="chino()" border="2" alt="Japones" width="75" height="50"></dato1></dia></th>
-		<th><dato2>中国</dato2></fondo></th>
+		<th><img src="Img/ban1.png" alt="Imagen" width="75" height="50"></th>
+		<td>Español</td>
 		</tr>
 </table>
-</center>
+
+<table onclick="ingles()">
+		<tr>
+		<th><img src="Img/ban2.png" alt="Imagen" width="75" height="50"></th>
+		<td>English</td>
+		</tr>
+</table>
+
+<table onclick="aleman()">
+		<tr>
+		<th><img src="Img/ban3.png" alt="Imagen" width="75" height="50"></th>
+		<td>Deutsch</td>
+		</tr>
+</table>
+
+<table onclick="japones()">
+		<tr>
+		<th><img src="Img/ban4.png" alt="Imagen" width="75" height="50"></th>
+		<td>日本</td>
+		</tr>
+</table>
+
+<table onclick="chino()">
+		<tr>
+		<th><img src="Img/ban5.png" alt="Imagen" width="75" height="50"></th>
+		<td>中国</td>
+		</tr>
+</table>
+
+<table onclick="portugues()">
+		<tr>
+		<th><img src="Img/ban6.png" alt="Imagen" width="75" height="50"></th>
+		<td>Português</td>
+		</tr>
+</table>
+
+<table onclick="frances()">
+		<tr>
+		<th><img src="Img/ban7.png" alt="Imagen" width="75" height="50"></th>
+		<td>Français</td>
+		</tr>
+</table>
 
 </div>
-</body></html>
+</center>
+
+<body onload="Start()"></html>

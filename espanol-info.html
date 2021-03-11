@@ -12,6 +12,26 @@
 
 	<title>Habla Pro Quo Web</title>
     <link rel="stylesheet" type="text/css" href="estilo.css">
+    
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-analytics.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyD31vicQ2FKnyuk52_Zm0hk5mFrUX0XOXg",
+    authDomain: "habla-pro-quo-94809.firebaseapp.com",
+    databaseURL: "https://habla-pro-quo-94809.firebaseio.com",
+    projectId: "habla-pro-quo-94809",
+    storageBucket: "habla-pro-quo-94809.appspot.com",
+    messagingSenderId: "744007858248",
+    appId: "1:744007858248:web:3e84a79ea0e5ee483a807d",
+    measurementId: "G-YV7XZEQ4XD"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
 
 <script>
     var mensaje="Ya puedes descargar totalmente gratuita la app, Habla Pro Quo desde este enlace https://play.google.com/store/apps/details?id=com.hablaproquo\n\n¿En que consiste?\nDa un pequeño apoyo a personas con dificultad al comunicarse.\n\n¿No es compatible?\nPodrá obtener una versión online desde este enlace http://hablaproquo2.000webhostapp.com/"
@@ -97,5 +117,15 @@ titulo1 {
     <td><img src="Img/twitter.png" onclick="twitter()" style="margin: 5% 0%; width: 30px; height: 30px;"><br></td>
 </table>
 
-<body>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-168108945-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-168108945-1');
+</script>
+
+<body onload="cargar()">
 </html>
